@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.main.activity.UnFoldActivity">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <ImageView
+           android:id="@+id/un_black"
+           android:layout_marginLeft="@dimen/dp_20"
+           android:layout_marginTop="@dimen/dp_20"
+           android:layout_width="@dimen/dp_25"
+           android:layout_height="@dimen/dp_25"
+           android:background="@drawable/back_black"/>
+       <TextView
+           android:layout_marginTop="@dimen/dp_20"
+           android:layout_centerInParent="true"
+           android:layout_width="wrap_content"
+           android:text="详情界面"
+           android:textSize="@dimen/dp_16"
+           android:layout_height="wrap_content" />
+       <ImageView
+           android:id="@+id/un_share"
+           android:layout_marginTop="@dimen/dp_20"
+           android:layout_alignParentRight="true"
+           android:layout_width="@dimen/dp_30"
+           android:layout_height="@dimen/dp_30"
+           android:layout_marginRight="@dimen/dp_20"
+           android:background="@mipmap/share" />
+   </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/un_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:background="@color/c_FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/c_FFFFFF"
+       >
+        <Button
+            android:layout_gravity="center_vertical"
+            android:id="@+id/bt_preview"
+            android:layout_width="@dimen/dp_112"
+            android:layout_height="@dimen/dp_38"
+            android:layout_below="@id/un_review"
+            android:layout_marginLeft="@dimen/dp_51"
+            android:background="@drawable/preview"
+            android:text="预览路线"
+            android:textColor="@color/c_fa6a13"
+            android:textSize="@dimen/sp_15" />
+        <Button
+            android:layout_gravity="center_vertical"
+            android:id="@+id/bt_money"
+            android:layout_width="@dimen/dp_112"
+            android:layout_height="@dimen/dp_38"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp_50"
+            android:layout_toRightOf="@+id/bt_preview"
+            android:background="@drawable/money"
+            android:text="$30.00"
+            android:textColor="@color/c_FFFFFF"
+            android:textSize="@dimen/sp_15" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.activity.NameActivity"
+    android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_12"
+                android:src="@drawable/back_white" />
+            <TextView
+                android:layout_marginLeft="@dimen/dp_176"
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="修改昵称"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/c_333333"/>
+            <TextView
+                android:id="@+id/tv_true"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_337"
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="完成"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/c_FA6A13"
+                android:layout_marginBottom="@dimen/sp_14"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:background="@color/c_F0F0F0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:ellipsize="end"
+            android:background="@drawable/edittext"
+            android:id="@+id/tv_name"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="拌小米"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/c_999999"/>
+        <TextView
+            android:id="@+id/tv_figure"
+            android:layout_marginRight="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_93"
+            android:layout_marginLeft="@dimen/dp_303"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="27/27"
+            android:textColor="@color/c_999999"
+            android:textSize="@dimen/sp_14"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

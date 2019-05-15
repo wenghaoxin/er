@@ -1,0 +1,4 @@
+//include ':app', ':day_message'
+include ':day_message', ':day01_loginn', ':day02_chat', ':day_login', ':day0_loginn', ':day_hander', ':day_androisus'
+project(':day01_loginn').projectDir = new File('day01_login')
+project(':day0_loginn').projectDir = new File('day0_login')

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/guide_03"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dp_100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="智能地图"
+            android:textColor="@color/c_78d9ff"
+            android:textSize="@dimen/sp_30"/>
+        <TextView
+            android:layout_toRightOf="@id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="为你指路"
+            android:textColor="@color/c_fa6a13"
+            android:textSize="@dimen/sp_30"/>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/bt_exe"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="@dimen/dp_127"
+        android:layout_height="wrap_content"
+        android:text="立即体验"
+        android:textSize="@dimen/dp_18"
+        android:textColor="@color/c_FFFFFF"
+        android:background="@drawable/ff9_f6"
+        android:layout_marginBottom="@dimen/dp_43"/>
+
+</RelativeLayout>

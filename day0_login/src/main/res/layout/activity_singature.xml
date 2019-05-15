@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.activity.SingatureActivity"
+    android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/dp_4">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_12"
+                android:src="@drawable/back_white" />
+            <TextView
+                android:layout_marginLeft="@dimen/dp_176"
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个性签名"
+                android:textSize="@dimen/sp_16"
+                android:textColor="@color/c_333333"
+                android:layout_marginBottom="@dimen/sp_14"/>
+            <TextView
+                android:id="@+id/tv_true"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_337"
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="完成"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@color/c_FA6A13"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:background="@color/c_F0F0F0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:maxLength="27"
+            android:background="@drawable/edittext"
+            android:id="@+id/tv_sing"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="四肢不全五体不勤好吃懒做"
+            android:textColor="@color/c_999999"
+            android:textSize="@dimen/sp_14"/>
+        <TextView
+            android:id="@+id/tv_numbar"
+            android:layout_marginRight="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_93"
+            android:layout_marginLeft="@dimen/dp_303"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="27/27"
+            android:textColor="@color/c_999999"
+            android:textSize="@dimen/sp_14"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

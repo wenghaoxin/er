@@ -1,0 +1,36 @@
+<html>
+<head>
+    <mcta charset="UTF-8">
+        <title>标签html</title>
+    </mcta>
+</head>
+<body >
+<input  type="text" value="输入框" id="edit">
+<button id="btn1" onclick="callAndroid()">调用Android方式1</button>
+<button id="btn2" onclick="callAndroid()">调用Android方式2</button>
+
+<script>
+      //Android调用js
+     function callJs(msg){
+       //想要传递过来的内容显示在输入框
+       //douncument.getElementById()找id var表示类型所有
+         var edit = document.getElementById("edit");
+         edit.value = msg;
+         return "返回值";
+      }
+
+      //js调用Android方法1
+      function callAndroid(){
+      //Android要通过对象调用方法，所以需要将java的对象映射过来
+        window.android.CallAndroid("js调Android中的方法");
+      }
+       //js调用Android方法2
+       function cannAndroid2(){
+       /*跟后端约定好的url协议为:js//webview?arg1=111&arg2=222*/
+       document.location="js//webview?arg1=111&arg2=222";
+       }
+
+</script>
+
+</body>
+</html>
