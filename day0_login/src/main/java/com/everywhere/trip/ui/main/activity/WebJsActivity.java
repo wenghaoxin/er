@@ -41,7 +41,14 @@ public class WebJsActivity extends AppCompatActivity {
     private int a=2;
     private int b=2;
     private int c=2;
+    private int st=2;
+    private int sc=2;
+    private int sv=2;
+<<<<<<< .mine
    
+=======
+
+>>>>>>> .theirs
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
