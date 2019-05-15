@@ -38,7 +38,10 @@ public class WebJsActivity extends AppCompatActivity {
      */
     private TextView mWebjsTv;
     private String cardURL;
-
+    private int a=2;
+    private int b=2;
+    private int c=2;
+   
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,9 +59,6 @@ public class WebJsActivity extends AppCompatActivity {
         String url = intent.getStringExtra("url");
         String title = intent.getStringExtra("title");
 
-        int q=3;
-        int a=4;
-        int y=6;
 
 
         mWebjsTv.setText(title);
