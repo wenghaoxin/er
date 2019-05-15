@@ -72,6 +72,8 @@ public class NameActivity extends AppCompatActivity implements View.OnClickListe
 
         mTvTrue = (TextView) findViewById(R.id.tv_true);
         mTvTrue.setOnClickListener(this);
+        private String aa="wsec";
+        
     }
 
     @Override
