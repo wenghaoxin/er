@@ -38,6 +38,9 @@ public class WebJsActivity extends AppCompatActivity {
      */
     private TextView mWebjsTv;
     private String cardURL;
+    private int st=2;
+    private int sc=2;
+    private int sv=2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
