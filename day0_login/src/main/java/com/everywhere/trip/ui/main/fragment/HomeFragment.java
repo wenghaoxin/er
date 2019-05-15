@@ -91,7 +91,7 @@ public class HomeFragment extends BaseFragment<HomeView, HomePresenter> implemen
         });
         mAdapter.setOnBunItemClick(new RecHomeAdapter.onBunItemClick() {
             @Override
-            public void setBunItemClick(View view, int newpostion) {
+            public void setBunItemClick(int newpostion) {
                 Intent intent = new Intent(getContext(), WebJsActivity.class);
                 String contentURL = mRoutes.get(newpostion).getContentURL();
                 String title = mRoutes.get(newpostion).getTitle();

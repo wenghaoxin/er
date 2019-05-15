@@ -107,6 +107,10 @@
             android:theme="@style/NoTime" />
         <activity android:name=".ui.main.activity.WebJsActivity"
             android:theme="@style/NoTime"></activity>
+
+        <meta-data
+            android:name="channel"
+            android:value="${CHANNEL_VALUE}" />
     </application>
 
 </manifest>

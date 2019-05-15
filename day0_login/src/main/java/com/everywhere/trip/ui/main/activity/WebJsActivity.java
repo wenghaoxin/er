@@ -75,10 +75,7 @@ public class WebJsActivity extends AppCompatActivity {
                 finish();
             }
         });
-
-
+        
     }
-
-
 
 }

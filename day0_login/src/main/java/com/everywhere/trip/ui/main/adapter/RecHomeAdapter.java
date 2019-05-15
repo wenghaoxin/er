@@ -67,7 +67,9 @@ public class RecHomeAdapter extends RecyclerView.Adapter {
         if (getItemViewType(position) == BANNER_STYLE) {
             BannerHolder bannerHolder = (BannerHolder) holder;
             bannerHolder.banner.setImages(banners)
+                    .isAutoPlay(true)
                     .setDelayTime(3000)
+                    .setBannerStyle(BannerConfig.NOT_INDICATOR)
                     .setImageLoader(new com.youth.banner.loader.ImageLoader() {
                         @Override
                         public void displayImage(Context context, Object path, ImageView imageView) {
@@ -119,7 +121,7 @@ public class RecHomeAdapter extends RecyclerView.Adapter {
             @Override
             public void onClick(View v) {
                 if (onBunItemClick!=null){
-                    onBunItemClick.setBunItemClick(v,i);
+                    onBunItemClick.setBunItemClick(i);
                 }
             }
         });
@@ -200,7 +202,7 @@ public class RecHomeAdapter extends RecyclerView.Adapter {
     }
 
     public interface onBunItemClick{
-       void setBunItemClick(View view,int newpostion);
+       void setBunItemClick(int newpostion);
     }
     onBunItemClick onBunItemClick;
 
