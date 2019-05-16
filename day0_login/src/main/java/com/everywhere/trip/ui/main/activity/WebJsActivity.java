@@ -44,6 +44,7 @@ public class WebJsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web_js);
         initView();
+        //这是hot
     }
 
     private void initView() {
